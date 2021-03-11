@@ -8,17 +8,17 @@
     <link rel="stylesheet" type="text/css" href="scratchStyle.css" />
     <link rel="shortcut icon" type="image/x-icon" href="../Hulu-Assets/favicon.ico.png" />
 </head>
-<body>
+<body style="margin:0; padding:0;">
     <div class="wrapper">
         <div class="masthead">
             <div class="navbar">
                 <div class="navlinks">
-                    <a href="https://google.com" target="blank">LOG IN</a>
+                    <a href="https://google.com" id="logIn" target="blank">LOG IN</a>
                 </div>
             </div>
             <div class="mh_content">
                 <div class="mhEyebrow">Try up to One Month Free</div>
-                <div class="mhHeader"></div>
+                <div class="mhHeader"><img src="../Hulu-Assets/Hulu_Logo-01_newgreen.png"></div>
                 <div class="mhSubHeader">Watch thousands of shows and movies, with plans starting at $5.99/month.</div>
                 <div class="mhDetail">HBO Max™, SHOWTIME®, CINEMAX® and STARZ® available as add-ons.</div>
                 <div class="callToAction">
@@ -26,12 +26,71 @@
                 </div>
                 <div class="legal">Free trial for new & eligible returning subscribers only.</div>
             </div>
-            <div class="ribbon"></div>
+            <div class="ribbon">
+                <div class="channels">
+                    <img src="../Hulu-Assets/child_logos.png" id="channelPic" alt="Bundle Channels" />
+                </div>
+                <div id="bundle">
+                    <div class="mhEyebrow">BUNDLE WITH ANY HULU PLAN & SAVE</div>
+                    <div class="bundleDetail">Get Hulu, Disney+, and ESPN+ starting at $12.99/month.*</div>
+                </div>
+                <div id="bundleCTA">
+                    <button class="bundleButton"> GET BUNDLE </button>
+                    <a href="https://www.google.com" target="blank">Terms apply</a>
+                </div>
+            </div>
         </div>
         <div class="library">
-            <div class="libHeader"></div>
-            <div class="grid"></div>
+            <div class="libHeader">
+                <div class="mhEyebrow">INCLUDED IN ALL PLANS</div>
+                <div class="libTitle">All The TV You Love</div>
+                <div class="libSubtitle">Stream full seasons of exclusive series, current-season episodes, hit movies, Hulu Originals, kids shows, and more.</div>
+            </div>
+            <div class="grid">
+                <div class="module">
+                    <div class="showInfo">
+                        <h4>Past & Current Seasons</h4>
+                        <h3>TV Shows</h3>
+                    </div>
+                    <div class="vignette"></div>
+                    <div class="showShape">
+                        <img src="../Hulu-Assets/shows-bobsburgers-category-tril-294x450.jpeg" alt="TV SHOWS: Bob's Burgers" />
+                    </div>
+                    </div>
+                <div class="module">
+                    <div class="showInfo">
+                        <h4>New & Classic</h4>
+                        <h3>Movies</h3>
+                    </div>
+                    <div class="vignette"></div>
+                    <div class="showShape">
+                        <img src="../Hulu-Assets/movies-usvsbillieholiday-category-tril-294x450.jpeg" alt="MOVIES: The United States VS. Billie Holiday" />
+                    </div>
+                </div>
+                <div class="module">
+                    <div class="showInfo">
+                        <h4>Groundbreaking</h4>
+                        <h3>Hulu Originals</h3>
+                    </div>
+                    <div class="vignette"></div>
+                    <div class="showShape">
+                        <img src="../Hulu-Assets/originals-solaropposites-category-tril-294x450.jpeg" alt="ORIGINALS: Solar Opposites" />
+                    </div>
+                </div>
+                <div class="module">
+                    <div class="showInfo">
+                        <h4>Newly Added</h4>
+                        <h3>Shows & Movies</h3>
+                    </div>
+                    <div class="vignette"></div>
+                    <div class="showShape">
+                        <img src="../Hulu-Assets/newarrivals-modernfamily-category-tril-294x450.jpeg" alt="NEWLY ADDED: Modern Family"/>
+                    </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
+    </body>
 </body>
 </html>

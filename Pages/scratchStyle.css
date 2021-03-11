@@ -1,14 +1,32 @@
+.wrapper {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
 .masthead {
     background-image: url(../Hulu-Assets/homepage-masthead-test-desktop-3200x1320-v4c-6-16-20.jpeg);
     background-size: cover;
     width:auto;
 }
 
-.ribbon {
-    width:auto;
-    height: 5em;
-    background-image: linear-gradient(to right, #0F495C 0%, #0D3640 50%, #08141F 100%);
-    z-index: 2;
+.navbar {
+    text-align: right;
+    padding-top: 2em;
+    width: 100%;
+}
+
+.navlinks {
+    text-align: right;
+    width: 100%;
+}
+
+.navlinks a {
+    color: white;
+    text-align: right;
+    margin:1em;
+}
+
+#logIn {
+    text-align: right;
 }
 
 .mh_content {
@@ -17,8 +35,77 @@
     flex-direction: column;
     align-items: center;
     color: white;
+    font-family: Helvetica, Arial, sans-serif;
 }
 
 .mhEyebrow {
+    color: #2DBD9D;
+}
+
+.freeTrial {
+    padding-top: 1.2em;
+    padding-left: 2em;
+    padding-bottom: 1.2em;
+    padding-right: 2em;
+
+    margin: 2em;
+}
+
+.legal {
+    font-size: .8em;
+}
+
+.ribbon {
+    width:auto;
+    height: 8em;
+    background-image: linear-gradient(to left, #0F495C 0%, #0D3640 50%, #08141F 100%);
+    z-index: 2;
+    display: flex;
+    justify-content: space-around;
+}
+
+.channels {
+    width: 20%;
+}
+
+#channelPic {
+    width: 100%;
+    padding: 1em;
+}
+
+#bundleDetail {
+    width: 40%;
+}
+
+#bundleCTA {
+    width: 30%;
+    display: flex;
+    align-content: center;
+    flex-direction: column;
+}
+
+.bundleButton {
+    font: 2em;
     color: white;
+    padding: 2em;
+    width: 35%;
+    border: 2px solid white;
+    border-radius: 5px;
+    background-color: transparent;
+}
+
+.library {
+    color: white;
+    background-color:black;
+    text-align: center;
+}
+
+.grid {
+    display: flex;
+    justify-content: space-around;
+}
+
+.showInfo {
+    position: relative;
+    text-align:left;
 }
