@@ -1,0 +1,24 @@
+.masthead {
+    background-image: url(../Hulu-Assets/homepage-masthead-test-desktop-3200x1320-v4c-6-16-20.jpeg);
+    background-size: cover;
+    width:auto;
+}
+
+.ribbon {
+    width:auto;
+    height: 5em;
+    background-image: linear-gradient(to right, #0F495C 0%, #0D3640 50%, #08141F 100%);
+    z-index: 2;
+}
+
+.mh_content {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+}
+
+.mhEyebrow {
+    color: white;
+}
