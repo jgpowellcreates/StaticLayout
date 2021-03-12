@@ -2,15 +2,33 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
+body {
+    margin: 0;
+    padding: 0;
+}
+
+h5 {
+    font-size: .8em;
+    line-height: 9px;
+    font-weight: -200;
+}
+
+h4 {
+    font-weight: 1000;
+    color: white;
+}
+
 .masthead {
     background-image: url(../Hulu-Assets/homepage-masthead-test-desktop-3200x1320-v4c-6-16-20.jpeg);
-    background-size: cover;
+    background-size: contain;
     width:auto;
 }
 
 .navbar {
     text-align: right;
-    padding-top: 2em;
+    padding-top: 2.2em;
+
+    margin-bottom: 2em;
     width: 100%;
 }
 
@@ -22,7 +40,18 @@
 .navlinks a {
     color: white;
     text-align: right;
-    margin:1em;
+    font-size:.9em;
+    letter-spacing: .08em;
+    font-weight: 700;
+    font-stretch: condensed;
+    text-decoration: none;
+
+    margin:.9em;
+    margin-right:2.7em;
+}
+
+.navlinks a:hover {
+    color:rgb(194, 193, 193);
 }
 
 #logIn {
@@ -36,28 +65,75 @@
     align-items: center;
     color: white;
     font-family: Helvetica, Arial, sans-serif;
+    padding-top: 2.3em;
+    padding-right: 2em;
+    padding-bottom: 2.2em;
+    padding-left: 2em;
 }
 
 .mhEyebrow {
     color: #2DBD9D;
+    margin-top: 0em;
+    padding-top:0em;
+}
+
+.mhHeader {
+    display: flex;
+    justify-content: center;
+    padding-top: .5em;
+}
+
+.mhSubHeader {
+    font-size: 22px;
+    letter-spacing: 1px;
+    text-align: center;
+    line-height: 30px;
+    font-weight: 520;
+    font-stretch:wider;
+
+    padding-top: .75em;
+}
+
+.mhDetail {
+    padding-top: .2em;
+    font-size: 1em;
 }
 
 .freeTrial {
-    padding-top: 1.2em;
-    padding-left: 2em;
-    padding-bottom: 1.2em;
-    padding-right: 2em;
+    padding-top: 1.5em;
+    padding-left: 2.3em;
+    padding-bottom: 1.5em;
+    padding-right: 2.3em;
+    margin: 1.2em;
 
-    margin: 2em;
+    border: 0px solid black;
+    border-radius: 4px;
+    background-color: white;
+    opacity:100%;
+
+    margin:.7em;
+
+    font-size:.86em;
+    letter-spacing: .08em;
+    font-weight: 800;
+    font-stretch: condensed;
+}
+
+.freeTrial:hover {
+    opacity: 75%;
 }
 
 .legal {
-    font-size: .8em;
+    font-size: 11px;
+    font-weight: 0;
+    color:rgb(146, 146, 146);
+    margin-top:.5em;
+    margin-bottom: 2em;
 }
 
 .ribbon {
     width:auto;
-    height: 8em;
+    height: 9em;
     background-image: linear-gradient(to left, #0F495C 0%, #0D3640 50%, #08141F 100%);
     z-index: 2;
     display: flex;
@@ -66,9 +142,12 @@
 
 .channels {
     width: 20%;
+    display: flex;
+
 }
 
 #channelPic {
+    object-fit: contain;
     width: 100%;
     padding: 1em;
 }
@@ -87,11 +166,16 @@
 .bundleButton {
     font: 2em;
     color: white;
-    padding: 2em;
+    padding: 1.5em 0em 1.5em 0em;
     width: 35%;
     border: 2px solid white;
     border-radius: 5px;
     background-color: transparent;
+
+    font-size:.9em;
+    letter-spacing: .08em;
+    font-weight: 800;
+    font-stretch: condensed;
 }
 
 .library {
@@ -102,10 +186,26 @@
 
 .grid {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
+}
+
+.showShape {
+    display: flex;
+    margin: .6em;
+}
+
+.vignette {
+    position:absolute;
+    background: linear-gradient(156.82deg, rgba(0,0,0,0.6) 4.58%, rgba(0,0,0,0) 69.61%),
+                linear-gradient(24.5deg, rgba(0,0,0,0.2) 4.71%, rgba(0,0,0,0) 71.49%);
+    display: flex;
+    flex: 1;
+    width: 294px;
+    height: 450px;
 }
 
 .showInfo {
     position: relative;
     text-align:left;
+    padding-left:1.7em;
 }
