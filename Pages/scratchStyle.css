@@ -11,23 +11,33 @@ h5 {
     font-size: .8em;
     line-height: 9px;
     font-weight: -200;
+    margin-top: 0;
+    margin-bottom: 0;
 }
 
 h4 {
     font-weight: 1000;
     color: white;
+    margin-top: 0;
+    margin-bottom: 0;
 }
 
+button:hover {
+    cursor:pointer;
+}
+
+/* MASTHEAD SECTION*/
+
 .masthead {
-    background-image: url(../Hulu-Assets/homepage-masthead-test-desktop-3200x1320-v4c-6-16-20.jpeg);
-    background-size: contain;
-    width:auto;
+    width: 100%;
+    position:absolute;
+    z-index: -1;
+    background-size:cover;
 }
 
 .navbar {
     text-align: right;
     padding-top: 2.2em;
-
     margin-bottom: 2em;
     width: 100%;
 }
@@ -46,6 +56,7 @@ h4 {
     font-stretch: condensed;
     text-decoration: none;
 
+    z-index: 5;
     margin:.9em;
     margin-right:2.7em;
 }
@@ -67,36 +78,38 @@ h4 {
     font-family: Helvetica, Arial, sans-serif;
     padding-top: 2.3em;
     padding-right: 2em;
-    padding-bottom: 2.2em;
+    padding-bottom: 2.5em;
     padding-left: 2em;
 }
 
 .mhEyebrow {
     color: #2DBD9D;
-    margin-top: 0em;
-    padding-top:0em;
+    margin: 0em;
+    padding-top:1em;
 }
 
 .mhHeader {
     display: flex;
     justify-content: center;
-    padding-top: .5em;
+    padding-top: 2em;
 }
 
 .mhSubHeader {
     font-size: 22px;
-    letter-spacing: 1px;
+    letter-spacing: .01em;
     text-align: center;
     line-height: 30px;
-    font-weight: 520;
+    font-weight: 550;
     font-stretch:wider;
 
     padding-top: .75em;
 }
 
 .mhDetail {
-    padding-top: .2em;
+    padding-top: 1.5em;
     font-size: 1em;
+    opacity:.9;
+    padding-bottom: 1.2em;
 }
 
 .freeTrial {
@@ -131,13 +144,25 @@ h4 {
     margin-bottom: 2em;
 }
 
+
+
+/* RIBBONS STYLING */
+
 .ribbon {
     width:auto;
-    height: 9em;
+    height: 7.5em;
     background-image: linear-gradient(to left, #0F495C 0%, #0D3640 50%, #08141F 100%);
     z-index: 2;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
+
+    padding: 1em 2.3em 1em 2.3em;
+}
+
+.ribbon a{
+    color: white;
+    opacity: .7;
+    font-weight: 100;
 }
 
 .channels {
@@ -148,50 +173,103 @@ h4 {
 
 #channelPic {
     object-fit: contain;
-    width: 100%;
-    padding: 1em;
+    height: 4.75em;
+    align-self: center;
+
+}
+
+#bundle {
+    padding: 0 0em 0 1.6em;
+    width:max-content;
+    margin-right: 6.4em;
 }
 
 #bundleDetail {
-    width: 40%;
+    font-size: 24px;
+    margin: 0;
+    font-stretch: wider;
+    padding: .8em 0 0 0;
+    font-weight: 0;
 }
 
-#bundleCTA {
-    width: 30%;
+.detailLink {
+    padding: .8em 0 0 0;
+    font-size: 15px;
+}
+
+.bundleCTA {
     display: flex;
-    align-content: center;
     flex-direction: column;
+    justify-self: center;
+    padding: 1.55em .8em 0 0em;
+    margin-left: 8em;
 }
 
-.bundleButton {
+.bundleButton button{
     font: 2em;
     color: white;
-    padding: 1.5em 0em 1.5em 0em;
-    width: 35%;
+    padding: 1.4em 0em 1.4em 0em;
+    width: 9.8em;
     border: 2px solid white;
     border-radius: 5px;
     background-color: transparent;
+    margin-bottom: .5em;
 
     font-size:.9em;
     letter-spacing: .08em;
     font-weight: 800;
     font-stretch: condensed;
+
+    flex:1;
 }
+
+
+.termsLinks {
+    font-size: 10px;
+    text-align: center;
+}
+
+
+
+/* LIBRARY SECTION */
 
 .library {
     color: white;
     background-color:black;
     text-align: center;
+    padding-top:4.6em;
+}
+
+.libHeader h5 {
+    letter-spacing: 1px;
+    font-weight: 700;
+}
+
+.libTitle {
+    font-size:64px;
+    font-weight: 900;
+    font-stretch:extra-condensed;
+    padding-top: .28em;
+}
+
+.libSubtitle {
+    font-size: 20px;
+    font-weight: 200;
+    letter-spacing: 1px;
+    line-height: 28px;
+    padding-top: 1.5em;
+    padding-bottom: 2em;
 }
 
 .grid {
     display: flex;
     justify-content: center;
+    padding-bottom: 6em;
 }
 
 .showShape {
     display: flex;
-    margin: .6em;
+    margin: .645em;
 }
 
 .vignette {
@@ -207,5 +285,17 @@ h4 {
 .showInfo {
     position: relative;
     text-align:left;
-    padding-left:1.7em;
+    padding:1.5em 0 0 1.6em;
+}
+
+.showInfo h4 {
+    letter-spacing: 1px;
+    font-weight: 100;
+    margin:0;
+}
+
+.showInfo h3 {
+    margin: 0;
+    padding-top: .05em;
+    font-size: 25px;
 }

@@ -1,3 +1,12 @@
+<!--THINGS TO ADDRESS
+
+1. MASTHEAD IMG does not match size. Hulu, uses multiple sizes based on screen...
+            How can I simply edit the image... crop it to match pictured size?
+
+2. CSS editing is pretty bulky and repetitive in a few areas. Also.... lots of classes (more than IDs) w/ really specific deets. Should they be IDs?
+-->
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -10,7 +19,7 @@
 </head>
 <body>
     <div class="wrapper">
-        <div class="masthead">
+        <div><img src="../Hulu-Assets/homepage-masthead-test-desktop-3200x1320-v4c-6-16-20.jpeg" class="masthead" />
             <div class="navbar">
                 <div class="navlinks">
                     <a href="https://google.com" id="logIn" target="blank">LOG IN</a>
@@ -22,21 +31,23 @@
                 <div class="mhSubHeader">Watch thousands of shows and movies, with plans starting at<br>$5.99/month.</div>
                 <div class="mhDetail"><H4>HBO Max™, SHOWTIME®, CINEMAX® and STARZ® available as add-ons.</H4></div>
                 <div class="callToAction">
-                    <button class="freeTrial">START YOUR FREE TRIAL</button>
+                    <a href="https://google.com" id="Free Trail" target="blank">
+                    <button class="freeTrial">START YOUR FREE TRIAL</button></a>
                 </div>
                 <div class="legal">Free trial for new & eligible returning subscribers only.</div>
             </div>
             <div class="ribbon">
-                <div class="channels">
-                    <img src="../Hulu-Assets/child_logos.png" id="channelPic" alt="Bundle Channels" />
-                </div>
+                <!--I removed the <div class="channels"> that had this img nested. Easier to manipulate img alone-->
+                <img src="../Hulu-Assets/child_logos.png" id="channelPic" alt="Bundle Channels" />
                 <div id="bundle">
                     <div class="mhEyebrow"><h5>BUNDLE WITH ANY HULU PLAN & SAVE</h5></div>
-                    <div class="bundleDetail"><h4>Get Hulu, Disney+, and ESPN+ starting at $12.99/month.*</h4></div>
+                    <div id="bundleDetail"><h4>Get Hulu, Disney+, and ESPN+ starting at $12.99/month.*</h4></div>
+                    <div class="detailLink"><a href="https://www.google.com" target="blank">Details</a></div>
                 </div>
-                <div id="bundleCTA">
-                    <button class="bundleButton"> GET BUNDLE </button>
-                    <a href="https://www.google.com" target="blank">Terms apply</a>
+                <div class="bundleCTA">
+                    <a href="https://google.com" id="Get Bundle" target="blank">
+                    <div class="bundleButton"><button> GET BUNDLE </button></div></a>
+                    <div class="termsLinks"><a href="https://www.google.com" target="blank">Terms apply</a></div>
                 </div>
             </div>
         </div>
@@ -44,7 +55,7 @@
             <div class="libHeader">
                 <div class="mhEyebrow"><h5>INCLUDED IN ALL PLANS</h5></div>
                 <div class="libTitle">All The TV You Love</div>
-                <div class="libSubtitle"><h4>Stream full seasons of exclusive series, current-season episodes, hit movies, Hulu Originals, kids shows, and more.</h4></div>
+                <div class="libSubtitle"><h4>Stream full seasons of exclusive series, current-season episodes, hit movies, Hulu<br>Originals, kids shows, and more.</h4></div>
             </div>
             <div class="grid">
                 <div class="module">
